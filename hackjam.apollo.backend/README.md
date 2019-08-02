@@ -156,4 +156,12 @@ Cool! Now let's allow a user to get the `movies` from a specific `category`.
 
 ## 3. Mutation
 
+> ...
+
 ## 4. Subscription
+
+> ...
+
+## 5. Playground
+
+![alt text](graphql-typescript.png)
