@@ -10,7 +10,6 @@ const typeDefs = gql`
   type Movie {
     id: ID
     title: String!
-    name: String!
     vote_count: String!
     video: String!
     vote_average: String!
@@ -51,12 +50,8 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     hello: () => 'Hello world!',
-    getMovies: () => {
-      return movies;
-    },
-    getCategories: () => {
-      return categories;
-    }
+    getMovies: () => movies,
+    getCategories: () => categories,
 
   },
 
@@ -72,7 +67,7 @@ const resolvers = {
   },
   Mutation: {
     addVote: (_, args) => {
-      return movies.find(movie => movie.id === parseInt(args.movie_id));
+      return movies.find(movie => movie.id === Number(args.movie_id));
     }
   },
   // Subscription: {

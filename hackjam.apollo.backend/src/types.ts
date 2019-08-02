@@ -1,9 +1,9 @@
-export interface Category {
+interface Category {
   id: number;
   name: string;
 }
 
-export interface Movie {
+ interface Movie {
   vote_count: number;
   id: number;
   video: boolean;
@@ -19,3 +19,6 @@ export interface Movie {
   overview: string;
   release_date: string;
 }
+
+
+export { Category, Movie }
