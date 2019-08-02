@@ -1,8 +1,8 @@
-import { Movie } from './types';
+import { Movie, /* Category */} from './types';
 import { movies } from './mocks/movies';
 import { categories } from './mocks/categories';
 
-export const getMoviesForCategory = (categoryName: string): Movie[] => {
+const getMoviesForCategory = (categoryName: string): Movie[] => {
   return movies.filter(movie =>
     movie.category_ids
       .map(categoryId =>
@@ -13,3 +13,16 @@ export const getMoviesForCategory = (categoryName: string): Movie[] => {
       .includes(categoryName.toUpperCase())
   );
 };
+
+
+// const getCategories = (categories: Array<Category>): any => {
+//   categories.map(category => {
+//     category.id
+//     category.name
+//   }); 
+
+//   // return categories.find(categorie => categorie.id));
+// };
+
+
+export { getMoviesForCategory}

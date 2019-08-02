@@ -1,6 +1,7 @@
 import { movies } from './mocks/movies';
 import { categories } from './mocks/categories';
 import { getMoviesForCategory } from './utils';
+import { Movie , Category } from './types';
 
 const resolvers = {
     Query: {
@@ -24,11 +25,11 @@ const resolvers = {
         return getMoviesForCategory(Category.name);
       }
     },
-    Mutation: {
-      addVote: (_, args) => {
-        return movies.find(movie => movie.id === Number(args.movie_id));
-      }
-    },
+    // Mutation: {
+    //   addVote: (_, args) => {
+    //     return movies.find(movie => movie.id === Number(args.movie_id));
+    //   }
+    // },
     // Subscription: {
     //   voteAdded: {
     //     subscribe: () => pubsub.asyncIterator(["voteAdded"])
