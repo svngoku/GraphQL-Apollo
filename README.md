@@ -1,8 +1,11 @@
-# GraphQL & Apollo 
+# GraphQL & Apollo
 
-Meetup : Construire un backend avec Apollo et GraphQL 
+![alt](https://www.rocketlab.com.au/wp-content/uploads/2017/01/graphql-banner.png)
+
+Meetup : Construire un backend avec Apollo et GraphQL.
 
 ## Requirement
-> Docker 
 
-> NodeJS 
+> NodeJS
+> Typescript basic
+> ecmascript 6

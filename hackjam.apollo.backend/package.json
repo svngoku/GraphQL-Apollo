@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "apollo-server": "^2.4.8",
+    "apollo-server": "^2.8.1",
     "graphql": "^14.1.1",
     "typescript": "^3.4.1"
   },
@@ -8,8 +8,8 @@
     "start": "nodemon --exec ts-node src/index.ts"
   },
   "devDependencies": {
-    "ts-node": "^8.0.3",
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.3"
   },
   "name": "backend",
   "version": "1.0.0",

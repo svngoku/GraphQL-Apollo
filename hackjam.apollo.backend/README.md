@@ -1,6 +1,6 @@
 # HackJam Let's play with GraphQL and Apollo
 
-`This session is available in plain JavaScript and TypeScript`
+`This session is available in plain TypeScript`
 
 ## 1. Your first queries
 
