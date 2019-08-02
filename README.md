@@ -7,5 +7,7 @@ Meetup : Construire un backend avec Apollo et GraphQL.
 ## Requirement
 
 > NodeJS
+
 > Typescript basic
-> ecmascript 6
+
+> Ecmascript 6
