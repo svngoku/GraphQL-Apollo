@@ -1,6 +1,7 @@
-import { Movie, /* Category */} from './types';
+import { Movie, /*Actor*/ } from './types';
 import { movies } from './mocks/movies';
 import { categories } from './mocks/categories';
+// import { actors } from  './mocks/actors';
 
 const getMoviesForCategory = (categoryName: string): Movie[] => {
   return movies.filter(movie =>
@@ -13,6 +14,10 @@ const getMoviesForCategory = (categoryName: string): Movie[] => {
       .includes(categoryName.toUpperCase())
   );
 };
+
+// const getActorsForMovies = (movies_id: number): Actor[] => {
+//   return actors.filter(movie => )
+// }
 
 
 // const getCategories = (categories: Array<Category>): any => {

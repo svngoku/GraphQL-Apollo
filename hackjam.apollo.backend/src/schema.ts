@@ -1,7 +1,7 @@
-import {gql} from 'apollo-server';
+import { gql } from 'apollo-server';
 
 export const typeDefs = gql`
-    type Movie {
+  type Movie {
     id: ID
     title: String!
     vote_count: String!
@@ -18,6 +18,12 @@ export const typeDefs = gql`
     release_date: String!
   }
 
+  type Actor {
+    id: ID
+    name: String
+    movies: [Movie]!
+  }
+
   type Category {
     id: ID
     name: String!
@@ -25,9 +31,19 @@ export const typeDefs = gql`
   }
 
   type Query {
-    hello: String!,
-    getMovies: [Movie!]!,
+    hello: String!
+    getMovies: [Movie!]!
     getCategories: [Category!]!
-    
+    getActors:  [Actor!]
+
+  }
+
+  type Mutation {
+    addActor(data: AddActorInput): Actor!
+  }
+
+  input AddActorInput {
+    id: ID
+    name: String
   }
 `;
