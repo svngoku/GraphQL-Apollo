@@ -21,4 +21,11 @@ interface Category {
 }
 
 
-export { Category, Movie }
+  interface Actor {
+    id: number
+    name: string
+    movies_id: number[]
+  }
+
+
+export { Category, Movie , Actor }
