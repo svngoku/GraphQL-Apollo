@@ -10,8 +10,7 @@ const getMoviesForCategory = (categoryName: string): Movie[] => {
         categories
           .find(category => category.id === categoryId)
           .name.toUpperCase()
-      )
-      .includes(categoryName.toUpperCase())
+      ).includes(categoryName.toUpperCase())
   );
 };
 
@@ -30,4 +29,4 @@ const getMoviesForCategory = (categoryName: string): Movie[] => {
 // };
 
 
-export { getMoviesForCategory}
+export { getMoviesForCategory }
